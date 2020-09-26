@@ -26,6 +26,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -34,7 +35,7 @@ android {
 dependencies {
 
     // Kotlin
-    implementation(Libs.Kotlin.STDLIB)
+    implementation(kotlin("stdlib"))
 
     // Android
     implementation(Libs.Android.CORE_KTX)

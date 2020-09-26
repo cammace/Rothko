@@ -1,14 +1,12 @@
+import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-buildscript {
-    repositories {
-        google()
-        jcenter()
-    }
-    dependencies {
-        classpath("com.android.tools.build:gradle:4.0.1")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10")
-        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.3.0")
-    }
+plugins {
+    id("com.android.application") version Versions.ANDROID_GRADLE apply false
+    id("com.android.library") version Versions.ANDROID_GRADLE apply false
+    kotlin("android") version Versions.KOTLIN apply false
+    id ("androidx.navigation.safeargs.kotlin") version Versions.NAVIGATION apply false
+    id("com.github.ben-manes.versions") version Versions.GRADLE_VERSION_PLUGIN
 }
 
 allprojects {
@@ -16,4 +14,22 @@ allprojects {
         google()
         jcenter()
     }
+}
+
+tasks.register("clean", Delete::class) {
+    delete(rootProject.buildDir)
+}
+
+tasks.named("dependencyUpdates", DependencyUpdatesTask::class).configure {
+    // Example 1: reject all non stable versions
+    rejectVersionIf {
+        isNonStable(candidate.version)
+    }
+}
+
+fun isNonStable(version: String): Boolean {
+    val stableKeyword = listOf("RELEASE", "FINAL", "GA").any { version.toUpperCase().contains(it) }
+    val regex = "^[0-9,.v-]+(-r)?$".toRegex()
+    val isStable = stableKeyword || regex.matches(version)
+    return isStable.not()
 }

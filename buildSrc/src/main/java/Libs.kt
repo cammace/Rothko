@@ -1,7 +1,7 @@
 object Libs {
 
     object Kotlin {
-        const val STDLIB = "org.jetbrains.kotlin:kotlin-stdlib:1.4.10"
+
     }
 
     object Android {
