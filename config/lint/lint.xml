@@ -1,0 +1,12 @@
+<lint>
+    <issue id="InvalidPackage" severity="ignore" />
+
+    <!-- Cannot control libraries using an outdated Lint version.  -->
+    <issue id="ObsoleteLintCustomCheck" severity="ignore" />
+
+    <!-- Dependency version updates are managed manually. -->
+    <issue id="GradleDependency" severity="ignore" />
+
+    <!-- Unused resources make applications larger and slow down builds. -->
+    <issue id="UnusedResources" severity="error" />
+</lint>

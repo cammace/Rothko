@@ -1,12 +1,21 @@
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath("com.android.tools.build:gradle:${Versions.ANDROID_GRADLE}")
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.NAVIGATION}")
+    }
+}
+
 plugins {
-    id("com.android.application") version Versions.ANDROID_GRADLE apply false
-    id("com.android.library") version Versions.ANDROID_GRADLE apply false
     kotlin("android") version Versions.KOTLIN apply false
-    id("androidx.navigation.safeargs.kotlin") version Versions.NAVIGATION apply false
-    id("com.github.ben-manes.versions") version Versions.GRADLE_VERSION_PLUGIN
+    id("com.github.ben-manes.versions") version Versions.VERSIONS_PLUGIN
     id("com.cammace.code.quality")
 }
 

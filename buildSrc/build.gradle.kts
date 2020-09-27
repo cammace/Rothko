@@ -8,10 +8,17 @@ kotlinDslPluginOptions {
 
 repositories {
     gradlePluginPortal()
+    google()
 }
 
 dependencies {
+
+    implementation("com.android.tools.build:gradle-api:4.0.1")
     implementation("com.diffplug.spotless:spotless-plugin-gradle:5.6.1")
+}
+
+dependencies {
+    implementation("com.android.tools.build:gradle:4.0.1")
 }
 
 gradlePlugin {
