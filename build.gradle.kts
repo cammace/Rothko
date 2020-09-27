@@ -5,8 +5,9 @@ plugins {
     id("com.android.application") version Versions.ANDROID_GRADLE apply false
     id("com.android.library") version Versions.ANDROID_GRADLE apply false
     kotlin("android") version Versions.KOTLIN apply false
-    id ("androidx.navigation.safeargs.kotlin") version Versions.NAVIGATION apply false
+    id("androidx.navigation.safeargs.kotlin") version Versions.NAVIGATION apply false
     id("com.github.ben-manes.versions") version Versions.GRADLE_VERSION_PLUGIN
+    id("com.cammace.code.quality")
 }
 
 allprojects {
@@ -14,10 +15,6 @@ allprojects {
         google()
         jcenter()
     }
-}
-
-tasks.register("clean", Delete::class) {
-    delete(rootProject.buildDir)
 }
 
 tasks.named("dependencyUpdates", DependencyUpdatesTask::class).configure {

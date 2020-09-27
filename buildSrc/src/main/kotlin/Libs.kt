@@ -1,9 +1,5 @@
 object Libs {
 
-    object Kotlin {
-
-    }
-
     object Android {
         const val CORE_KTX = "androidx.core:core-ktx:1.3.1"
         const val APPCOMPAT = "androidx.appcompat:appcompat:1.2.0"

@@ -6,7 +6,7 @@ import timber.log.Timber
 /**
  * Initialization of the application.
  */
-class MainApplication: Application() {
+class MainApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
