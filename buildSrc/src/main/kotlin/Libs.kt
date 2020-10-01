@@ -22,6 +22,21 @@ object Libs {
         const val MATERIAL = "com.google.android.material:material:1.2.1"
     }
 
+    object Dagger {
+        const val  HILT_GRADLE_PLUGIN = "com.google.dagger:hilt-android-gradle-plugin:2.28-alpha"
+        const val HILT = "com.google.dagger:hilt-android:2.28-alpha"
+        const val HILT_COMPILER = "com.google.dagger:hilt-android-compiler:2.28-alpha"
+
+        object Android {
+            const val VIEW_MODEL = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha01"
+            const val COMPILER = "androidx.hilt:hilt-compiler:1.0.0-alpha01"
+        }
+    }
+
+    object Coil {
+
+    }
+
     object Testing {
         const val JUNIT = "junit:junit:4.13"
 

@@ -1,7 +1,8 @@
 package com.cammace.rothko.ui.home
 
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class HomeViewModel @ViewModelInject constructor(): ViewModel() {
 
 }

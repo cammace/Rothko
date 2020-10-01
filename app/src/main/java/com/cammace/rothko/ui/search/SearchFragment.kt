@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import com.cammace.rothko.R
 import com.cammace.rothko.databinding.ProfileFragmentBinding
 import com.cammace.rothko.databinding.SearchFragmentBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SearchFragment : Fragment() {
 
     private lateinit var binding: SearchFragmentBinding

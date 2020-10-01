@@ -2,6 +2,8 @@ plugins {
     id("com.android.application")
     kotlin("android")
     id("androidx.navigation.safeargs.kotlin")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -54,6 +56,12 @@ dependencies {
 
     // Google
     implementation(Libs.Google.MATERIAL)
+
+    // Injection
+    implementation(Libs.Dagger.HILT)
+    kapt(Libs.Dagger.HILT_COMPILER)
+    implementation(Libs.Dagger.Android.VIEW_MODEL)
+    kapt(Libs.Dagger.Android.COMPILER)
 
     // Misc.
     implementation(Libs.TIMBER)
