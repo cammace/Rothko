@@ -15,7 +15,7 @@ query TrendingArtwork(
             edges {
                 node {
                     image {
-                        url(version: ["small"])
+                        url(version: ["medium"])
                     }
                     title
                     artists(shallow: true) {

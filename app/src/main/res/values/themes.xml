@@ -26,5 +26,7 @@
         <item name="textAppearanceButton">@style/TextAppearance.Rothko.Button</item>
         <item name="textAppearanceCaption">@style/TextAppearance.Rothko.Caption</item>
         <item name="textAppearanceOverline">@style/TextAppearance.Rothko.Overline</item>
+
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Rothko.LargeComponent</item>
     </style>
 </resources>

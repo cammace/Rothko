@@ -44,6 +44,10 @@ object Libs {
         const val LOGGING = "com.squareup.okhttp3:logging-interceptor:$VERSION"
     }
 
+    object Coil {
+        const val CORE = "io.coil-kt:coil:1.0.0-rc3"
+    }
+
     object Testing {
         const val JUNIT = "junit:junit:4.13"
 

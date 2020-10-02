@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.liveData
 import com.cammace.rothko.core.data.ArtworkRepository
-import com.cammace.rothko.core.data.TrendingArtwork
 import com.cammace.rothko.core.data.model.TrendingArtwork
 import com.cammace.rothko.core.results.Resource
 

@@ -71,6 +71,7 @@ dependencies {
     implementation(Libs.OkHttp.LOGGING)
 
     // Misc
+    implementation(Libs.Coil.CORE)
     implementation(Libs.TIMBER)
 
     // Testing
