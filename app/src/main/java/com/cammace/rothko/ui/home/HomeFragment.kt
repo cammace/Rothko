@@ -24,21 +24,24 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.trendingArtwork.observe(viewLifecycleOwner, { resource ->
-            when (resource.status) {
-                Resource.Status.SUCCESS -> {
-                    resource.data?.forEach { artwork ->
-                        // TODO build out UI to display data.
-                        Timber.d(artwork.title)
+        viewModel.trendingArtwork.observe(
+            viewLifecycleOwner,
+            { resource ->
+                when (resource.status) {
+                    Resource.Status.SUCCESS -> {
+                        resource.data?.forEach { artwork ->
+                            // TODO build out UI to display data.
+                            Timber.d(artwork.title)
+                        }
+                    }
+                    Resource.Status.LOADING -> {
+                        // TODO
+                    }
+                    else -> {
+                        // TODO
                     }
                 }
-                Resource.Status.LOADING -> {
-                    // TODO
-                }
-                else -> {
-                    // TODO
-                }
             }
-        })
+        )
     }
 }

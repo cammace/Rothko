@@ -47,9 +47,12 @@ class MainActivity : AppCompatActivity() {
         )
 
         // Whenever the selected controller changes, setup the action bar.
-        controller.observe(this, { navController ->
-            setupActionBarWithNavController(this, navController)
-        })
+        controller.observe(
+            this,
+            { navController ->
+                setupActionBarWithNavController(this, navController)
+            }
+        )
         currentNavController = controller
     }
 

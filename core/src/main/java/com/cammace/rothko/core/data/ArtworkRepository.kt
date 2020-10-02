@@ -44,4 +44,3 @@ fun Response<TrendingArtworkQuery.Data>.toTrendingArtwork(): List<TrendingArtwor
         }
     } ?: emptyList()
 }
-
