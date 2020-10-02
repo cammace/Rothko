@@ -17,20 +17,8 @@ import javax.inject.Singleton
  */
 @InstallIn(ApplicationComponent::class)
 @Module
-class AppModule {
+object AppModule {
 
-
-//    @ApplicationScope
-//    @Singleton
-//    @Provides
-//    fun providesApplicationScope(
-//        @DefaultDispatcher defaultDispatcher: CoroutineDispatcher
-//    ): CoroutineScope = CoroutineScope(SupervisorJob() + defaultDispatcher)
-//
-//    @Singleton
-//    @Provides
-//    @MainThreadHandler
-//    fun provideMainThreadHandler(): IOSchedHandler = IOSchedMainHandler()
-
+    // TODO
 
 }

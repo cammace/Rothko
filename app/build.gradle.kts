@@ -39,6 +39,7 @@ android {
 }
 
 dependencies {
+    api(project(":core"))
 
     // Kotlin
     implementation(kotlin("stdlib"))
@@ -63,7 +64,13 @@ dependencies {
     implementation(Libs.Dagger.Android.VIEW_MODEL)
     kapt(Libs.Dagger.Android.COMPILER)
 
-    // Misc.
+    // Network
+    implementation(Libs.Apollo.RUNTIME)
+    implementation(Libs.Apollo.COROUTINE)
+    implementation(Libs.OkHttp.CORE)
+    implementation(Libs.OkHttp.LOGGING)
+
+    // Misc
     implementation(Libs.TIMBER)
 
     // Testing

@@ -12,5 +12,19 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Rothko.Headline6</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Rothko.Headline5</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Rothko.Headline4</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Rothko.Headline3</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Rothko.Headline2</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Rothko.Headline1</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Rothko.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Rothko.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Rothko.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Rothko.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Rothko.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Rothko.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Rothko.Overline</item>
     </style>
 </resources>

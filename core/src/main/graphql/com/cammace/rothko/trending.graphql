@@ -1,0 +1,28 @@
+query TrendingArtwork(
+    $aggregations: [ArtworkAggregation] = [
+        MERCHANDISABLE_ARTISTS
+        MEDIUM
+        MAJOR_PERIOD
+        TOTAL
+    ]
+) {
+    marketingCollection(slug: "highlights-this-month") {
+        filteredArtwork: artworksConnection(
+            aggregations: $aggregations
+            first: 30
+            sort: "-decayed_merch"
+        ) {
+            edges {
+                node {
+                    image {
+                        url(version: ["small"])
+                    }
+                    title
+                    artists(shallow: true) {
+                        name
+                    }
+                }
+            }
+        }
+    }
+}

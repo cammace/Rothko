@@ -50,6 +50,11 @@ private fun Project.addSpotless() {
             target("**/*.gradle.kts")
             ktlint(Versions.CodeQuality.KTLINT).userData(mapOf("max_line_length" to "120"))
         }
+
+        format("misc") {
+            target("**/*.graphql")
+            prettier(Versions.CodeQuality.PRETTIER).configFile("$rootDir/config/spotless/.prettierrc.yml")
+        }
     }
 }
 

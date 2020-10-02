@@ -1,0 +1,17 @@
+{
+  "name":"Artsy GraphQL Schema",
+  "schemaPath":"schema.graphql",
+  "extensions":{
+    "endpoints":{
+      "Production Endpoint":{
+        "url":"https://metaphysics-production.artsy.net/v2",
+        "headers":{
+          "x-access-token":"${env:ROTHKO_ARTSY_ACCESS_TOKEN}",
+          "x-user-id":"${env:ROTHKO_ARTSY_USER_ID}",
+          "user-agent":"JS GraphQL"
+        },
+        "introspect":false
+      }
+    }
+  }
+}

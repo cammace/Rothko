@@ -23,7 +23,7 @@ object Libs {
     }
 
     object Dagger {
-        const val  HILT_GRADLE_PLUGIN = "com.google.dagger:hilt-android-gradle-plugin:2.28-alpha"
+        const val HILT_GRADLE_PLUGIN = "com.google.dagger:hilt-android-gradle-plugin:2.28-alpha"
         const val HILT = "com.google.dagger:hilt-android:2.28-alpha"
         const val HILT_COMPILER = "com.google.dagger:hilt-android-compiler:2.28-alpha"
 
@@ -33,8 +33,15 @@ object Libs {
         }
     }
 
-    object Coil {
+    object Apollo {
+        const val RUNTIME = "com.apollographql.apollo:apollo-runtime:${Versions.APOLLO}"
+        const val COROUTINE = "com.apollographql.apollo:apollo-coroutines-support:${Versions.APOLLO}"
+    }
 
+    object OkHttp {
+        private const val VERSION = "4.9.0"
+        const val CORE = "com.squareup.okhttp3:okhttp:$VERSION"
+        const val LOGGING = "com.squareup.okhttp3:logging-interceptor:$VERSION"
     }
 
     object Testing {

@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.cammace.rothko.R
-import com.cammace.rothko.databinding.HomeFragmentBinding
 import com.cammace.rothko.databinding.ProfileFragmentBinding
 import dagger.hilt.android.AndroidEntryPoint
 
