@@ -7,6 +7,7 @@ Rothko attempts to use the latest cutting edge libraries and tools. As a summary
 - [Coil](https://github.com/coil-kt/coil) for image loading.
 - [Kotlin Coroutines](https://kotlinlang.org/docs/reference/coroutines/coroutines-guide.html).
 - [Dagger/Hilt](https://dagger.dev/hilt/) for dependency injection.
+- [Epoxy](https://github.com/airbnb/epoxy) for simplified recycler view usage.
 - [View Binding](https://developer.android.com/topic/libraries/view-binding) to replace using `findViewById`.
 - [Navigation Components](https://developer.android.com/guide/navigation/navigation-getting-started) for adhering to an established [set of principles](https://developer.android.com/guide/navigation/navigation-principles)
 - [Material Design](https://material.io/develop/android) for UI and animated transitions.

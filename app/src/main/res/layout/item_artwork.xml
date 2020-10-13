@@ -3,30 +3,30 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/artworkContainer"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginHorizontal="4dp"
     android:layout_marginVertical="8dp"
-    app:cardCornerRadius="16dp"
-    android:layout_height="wrap_content"
-    android:id="@+id/artworkContainer">
+    app:cardCornerRadius="16dp">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/artworkImageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        app:shapeAppearance="?shapeAppearanceLargeComponent"
         app:layout_constraintBottom_toTopOf="@id/titleTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="?shapeAppearanceLargeComponent"
         tools:src="@tools:sample/backgrounds/scenic" />
 
     <TextView
         android:id="@+id/titleTextView"
+        style="?textAppearanceBody2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="?textAppearanceBody2"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"

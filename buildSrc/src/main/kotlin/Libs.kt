@@ -48,6 +48,13 @@ object Libs {
         const val CORE = "io.coil-kt:coil:1.0.0-rc3"
     }
 
+    object Epoxy {
+        private const val VERSION = "4.1.0"
+        const val CORE = "com.airbnb.android:epoxy:$VERSION"
+        const val PAGING = "com.airbnb.android:epoxy-paging3:$VERSION"
+        const val PROCESSOR = "com.airbnb.android:epoxy-processor:$VERSION"
+    }
+
     object Testing {
         const val JUNIT = "junit:junit:4.13"
 

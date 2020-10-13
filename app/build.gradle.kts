@@ -38,6 +38,10 @@ android {
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 dependencies {
     api(project(":core"))
 
@@ -71,6 +75,8 @@ dependencies {
     implementation(Libs.OkHttp.LOGGING)
 
     // Misc
+    implementation(Libs.Epoxy.CORE)
+    implementation(Libs.Epoxy.PAGING)
     implementation(Libs.Coil.CORE)
     implementation(Libs.TIMBER)
 

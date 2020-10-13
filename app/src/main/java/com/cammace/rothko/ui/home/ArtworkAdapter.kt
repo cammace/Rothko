@@ -1,46 +1,31 @@
 package com.cammace.rothko.ui.home
 
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
-import androidx.recyclerview.widget.RecyclerView
-import coil.load
-import com.cammace.rothko.R
+import com.airbnb.epoxy.TypedEpoxyController
 import com.cammace.rothko.core.data.model.TrendingArtwork
-import com.cammace.rothko.databinding.ItemArtworkBinding
+import com.cammace.rothko.core.results.Resource
 
-class ArtworkAdapter : ListAdapter<TrendingArtwork, ArtworkAdapter.ViewHolder>(ArtworkDiffCallback()) {
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_artwork, parent, false)
-        return ViewHolder(view)
-    }
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val artwork = getItem(position)
-        holder.bind(artwork)
-    }
-
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        private val binding = ItemArtworkBinding.bind(view)
-
-        fun bind(artwork: TrendingArtwork) {
-            binding.artworkImageView.load(artwork.imageUrl)
-            binding.titleTextView.text = artwork.artist
+class ArtworkEpoxyController : TypedEpoxyController<Resource<List<TrendingArtwork>>>() {
+    override fun buildModels(resource: Resource<List<TrendingArtwork>>) {
+        when (resource.status) {
+            Resource.Status.SUCCESS -> {
+                spanCount = 2
+                resource.data?.forEach {
+                    ItemArtworkEpoxyView(
+                        imageUrl = it.imageUrl,
+                        title = it.title
+                    ).id(it.imageUrl)
+                        .addTo(this)
+                }
+            }
+            Resource.Status.LOADING -> {
+                // TODO
+            }
+            else -> {
+                // TODO
+            }
         }
-    }
-}
 
-private class ArtworkDiffCallback : DiffUtil.ItemCallback<TrendingArtwork>() {
 
-    override fun areItemsTheSame(oldItem: TrendingArtwork, newItem: TrendingArtwork): Boolean {
-        // TODO should really be handling diff using IDs
-        return oldItem.imageUrl == newItem.imageUrl
     }
 
-    override fun areContentsTheSame(oldItem: TrendingArtwork, newItem: TrendingArtwork): Boolean {
-        return oldItem == newItem
-    }
 }
