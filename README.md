@@ -16,18 +16,9 @@ Rothko attempts to use the latest cutting edge libraries and tools. As a summary
 - [Material Design](https://material.io/develop/android) for UI and animated transitions.
 
 ### Apollo
-TODO: https://jimkyndemeyer.github.io/js-graphql-intellij-plugin/
+This project is setup using the [Intellij GraphQL Plugin](https://jimkyndemeyer.github.io/js-graphql-intellij-plugin/) to validate and test against the [schema.graphql](core/src/main/graphql/com/cammace/rothko/schema.graphql) file.
 
-
-
-
-
-
-
-
-
-
-
+<img src="https://raw.githubusercontent.com/jimkyndemeyer/js-graphql-intellij-plugin/a34e36b9596dfab0cc7a4dd4e768892f82c28c63/website/static/img/ide.png" alt="Screenshot showing plugin usage"/>
 
 ## Access Token
 When compiling locally, you'll need to provide an [Artsy access token](https://developers.artsy.net/v2/) to successfully receive data from the network.
