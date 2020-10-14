@@ -15,6 +15,20 @@ Rothko attempts to use the latest cutting edge libraries and tools. As a summary
 - [Navigation Components](https://developer.android.com/guide/navigation/navigation-getting-started) for adhering to an established [set of principles](https://developer.android.com/guide/navigation/navigation-principles)
 - [Material Design](https://material.io/develop/android) for UI and animated transitions.
 
+### Apollo
+TODO: https://jimkyndemeyer.github.io/js-graphql-intellij-plugin/
+
+
+
+
+
+
+
+
+
+
+
+
 ## Access Token
 When compiling locally, you'll need to provide an [Artsy access token](https://developers.artsy.net/v2/) to successfully receive data from the network.
 
