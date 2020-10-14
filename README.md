@@ -1,5 +1,5 @@
 # Rothko
-Rothko is an Android app that populates a list with artwork hosted on Artsy.
+Rothko is an Android app that populates a list with artwork hosted on [Artsy](https://www.artsy.net/).
 
 ## Screenshots
 <img src="art/trending_art.gif" height="400" alt="Trending artwork home"/>
