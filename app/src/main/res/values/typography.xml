@@ -2,80 +2,83 @@
 <resources>
 
     <style name="TextAppearance.Rothko.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
-        <item name="fontFamily">@font/raleway_light</item>
-        <item name="android:fontFamily">@font/raleway_light</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">98sp</item>
     </style>
 
     <style name="TextAppearance.Rothko.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
-        <item name="fontFamily">@font/raleway_light</item>
-        <item name="android:fontFamily">@font/raleway_light</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">61sp</item>
     </style>
 
     <style name="TextAppearance.Rothko.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
-        <item name="fontFamily">@font/raleway_light</item>
-        <item name="android:fontFamily">@font/raleway_light</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">49sp</item>
     </style>
 
     <style name="TextAppearance.Rothko.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
-        <item name="fontFamily">@font/raleway_light</item>
-        <item name="android:fontFamily">@font/raleway_light</item>
-        <item name="android:textSize">35sp</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
     </style>
 
     <style name="TextAppearance.Rothko.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
-        <item name="fontFamily">@font/raleway_light</item>
-        <item name="android:fontFamily">@font/raleway_light</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">24sp</item>
     </style>
 
     <style name="TextAppearance.Rothko.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="fontFamily">@font/raleway_light</item>
-        <item name="android:fontFamily">@font/raleway_light</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">20sp</item>
     </style>
 
     <style name="TextAppearance.Rothko.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
-        <item name="fontFamily">@font/raleway_light</item>
-        <item name="android:fontFamily">@font/raleway_light</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">16sp</item>
     </style>
 
     <style name="TextAppearance.Rothko.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
-        <item name="fontFamily">@font/raleway_light</item>
-        <item name="android:fontFamily">@font/raleway_light</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">14sp</item>
     </style>
 
     <style name="TextAppearance.Rothko.Body1" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="fontFamily">@font/worksans</item>
-        <item name="android:fontFamily">@font/worksans</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">17sp</item>
     </style>
 
     <style name="TextAppearance.Rothko.Body2" parent="TextAppearance.MaterialComponents.Body2">
-        <item name="fontFamily">@font/worksans</item>
-        <item name="android:fontFamily">@font/worksans</item>
-        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
     </style>
 
     <style name="TextAppearance.Rothko.Button" parent="TextAppearance.MaterialComponents.Button">
-        <item name="fontFamily">@font/worksans</item>
-        <item name="android:fontFamily">@font/worksans</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">15sp</item>
     </style>
 
     <style name="TextAppearance.Rothko.Caption" parent="TextAppearance.MaterialComponents.Caption">
-        <item name="fontFamily">@font/worksans</item>
-        <item name="android:fontFamily">@font/worksans</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">13sp</item>
     </style>
 
     <style name="TextAppearance.Rothko.Overline" parent="TextAppearance.MaterialComponents.Overline">
-        <item name="fontFamily">@font/worksans</item>
-        <item name="android:fontFamily">@font/worksans</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:textSize">11sp</item>
     </style>
 </resources>

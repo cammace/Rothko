@@ -77,6 +77,7 @@ dependencies {
     // Misc
     implementation(Libs.Epoxy.CORE)
     implementation(Libs.Epoxy.PAGING)
+    kapt(Libs.Epoxy.PROCESSOR)
     implementation(Libs.Coil.CORE)
     implementation(Libs.TIMBER)
 

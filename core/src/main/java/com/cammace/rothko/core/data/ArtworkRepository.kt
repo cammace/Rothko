@@ -39,7 +39,8 @@ fun Response<TrendingArtworkQuery.Data>.toTrendingArtwork(): List<TrendingArtwor
             TrendingArtwork(
                 imageUrl = node.image?.url,
                 title = node.title,
-                artist = node.artists?.get(0)?.name
+                artist = node.artists?.get(0)?.name,
+                displayPrice = node.listPrice?.fragments?.money?.display
             )
         }
     } ?: emptyList()

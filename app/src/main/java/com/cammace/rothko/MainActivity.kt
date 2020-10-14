@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LiveData
 import androidx.navigation.NavController
-import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 import com.cammace.rothko.databinding.MainActivityBinding
 import com.cammace.rothko.utils.setupWithNavController
 import dagger.hilt.android.AndroidEntryPoint

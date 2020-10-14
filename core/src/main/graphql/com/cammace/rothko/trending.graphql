@@ -7,13 +7,18 @@ query TrendingArtwork(
     ]
 ) {
     marketingCollection(slug: "highlights-this-month") {
+        id
         filteredArtwork: artworksConnection(
             aggregations: $aggregations
             first: 30
             sort: "-decayed_merch"
         ) {
+            id
             edges {
                 node {
+                    listPrice {
+                        ...money
+                    }
                     image {
                         url(version: ["medium"])
                     }
@@ -25,4 +30,8 @@ query TrendingArtwork(
             }
         }
     }
+}
+
+fragment money on Money {
+    display
 }

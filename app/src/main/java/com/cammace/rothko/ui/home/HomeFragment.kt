@@ -29,8 +29,11 @@ class HomeFragment : Fragment() {
             setController(controller)
         }
 
-        viewModel.trendingArtwork.observe(viewLifecycleOwner, { resource ->
-            controller.setData(resource)
-        })
+        viewModel.trendingArtwork.observe(
+            viewLifecycleOwner,
+            { resource ->
+                controller.setData(resource)
+            }
+        )
     }
 }

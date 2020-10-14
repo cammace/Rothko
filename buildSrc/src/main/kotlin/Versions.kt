@@ -3,7 +3,7 @@ object Versions {
     const val ANDROID_GRADLE = "4.0.1"
     const val NAVIGATION = "2.3.0"
     const val VERSIONS_PLUGIN = "0.33.0"
-    const val APOLLO = "2.4.0"
+    const val APOLLO = "2.4.1"
 
     object CodeQuality {
         const val SPOTLESS = "5.6.1"

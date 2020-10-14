@@ -1,6 +1,9 @@
 # Rothko
 Rothko is an Android app that populates a list with artwork hosted on Artsy.
 
+## Screenshots
+<img src="art/trending_art.gif" height="400" alt="Trending artwork home"/>
+
 ## Architecture
 Rothko attempts to use the latest cutting edge libraries and tools. As a summary:
 - [Apollo](https://github.com/apollographql/apollo-android) for generating Kotlin models from GraphQL queries.
