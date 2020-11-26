@@ -1,20 +1,23 @@
 object Libs {
 
     object Android {
-        const val CORE_KTX = "androidx.core:core-ktx:1.3.1"
+        const val CORE_KTX = "androidx.core:core-ktx:1.3.2"
         const val APPCOMPAT = "androidx.appcompat:appcompat:1.2.0"
         const val FRAGMENT_KTX = "androidx.fragment:fragment-ktx:1.2.5"
         const val ACTIVITY_KTX = "androidx.activity:activity-ktx:1.1.0"
-        const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:2.0.1"
+        const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:2.0.4"
 
         object Lifecycle {
-            const val LIVE_DATA_KTX = "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
-            const val VIEW_MODEL_KTX = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+            private const val VERSION = "2.2.0"
+            const val LIVE_DATA_KTX = "androidx.lifecycle:lifecycle-livedata-ktx:$VERSION"
+            const val VIEW_MODEL_KTX = "androidx.lifecycle:lifecycle-viewmodel-ktx:$VERSION"
         }
 
         object Navigation {
-            const val FRAGMENT_KTX = "androidx.navigation:navigation-fragment-ktx:2.3.0"
-            const val UI_KTX = "androidx.navigation:navigation-ui-ktx:2.3.0"
+            private const val VERSION = Versions.NAVIGATION
+            const val GRADLE_PLUGIN = "androidx.navigation:navigation-safe-args-gradle-plugin:$VERSION"
+            const val FRAGMENT_KTX = "androidx.navigation:navigation-fragment-ktx:$VERSION"
+            const val UI_KTX = "androidx.navigation:navigation-ui-ktx:$VERSION"
         }
     }
 
@@ -34,8 +37,9 @@ object Libs {
     }
 
     object Apollo {
-        const val RUNTIME = "com.apollographql.apollo:apollo-runtime:${Versions.APOLLO}"
-        const val COROUTINE = "com.apollographql.apollo:apollo-coroutines-support:${Versions.APOLLO}"
+        private const val VERSION = Versions.APOLLO
+        const val RUNTIME = "com.apollographql.apollo:apollo-runtime:$VERSION"
+        const val COROUTINE = "com.apollographql.apollo:apollo-coroutines-support:$VERSION"
     }
 
     object OkHttp {
@@ -45,18 +49,18 @@ object Libs {
     }
 
     object Coil {
-        const val CORE = "io.coil-kt:coil:1.0.0-rc3"
+        const val CORE = "io.coil-kt:coil:1.1.0"
     }
 
     object Epoxy {
-        private const val VERSION = "4.1.0"
+        private const val VERSION = "4.2.0"
         const val CORE = "com.airbnb.android:epoxy:$VERSION"
         const val PAGING = "com.airbnb.android:epoxy-paging3:$VERSION"
         const val PROCESSOR = "com.airbnb.android:epoxy-processor:$VERSION"
     }
 
     object Testing {
-        const val JUNIT = "junit:junit:4.13"
+        const val JUNIT = "junit:junit:4.13.1"
 
         object Android {
             const val JUNIT = "androidx.test.ext:junit:1.1.2"

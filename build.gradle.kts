@@ -1,6 +1,5 @@
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
         google()
@@ -9,8 +8,7 @@ buildscript {
 
     dependencies {
         classpath("com.android.tools.build:gradle:${Versions.ANDROID_GRADLE}")
-        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.NAVIGATION}")
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.28-alpha")
+        classpath(Libs.Android.Navigation.GRADLE_PLUGIN)
         classpath(Libs.Dagger.HILT_GRADLE_PLUGIN)
     }
 }
