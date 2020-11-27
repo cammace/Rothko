@@ -26,6 +26,11 @@ allprojects {
     }
 }
 
+tasks.named<Wrapper>("wrapper") {
+    distributionType = Wrapper.DistributionType.ALL
+    gradleVersion = Versions.GRADLE_WRAPPER
+}
+
 tasks.named("dependencyUpdates", DependencyUpdatesTask::class).configure {
     // Example 1: reject all non stable versions
     rejectVersionIf {
