@@ -1,6 +1,7 @@
 object Libs {
 
     object Android {
+        const val GRADLE_PLUGIN = "com.android.tools.build:gradle:4.0.1"
         const val CORE_KTX = "androidx.core:core-ktx:1.3.2"
         const val APPCOMPAT = "androidx.appcompat:appcompat:1.2.0"
         const val FRAGMENT_KTX = "androidx.fragment:fragment-ktx:1.2.5"
@@ -25,14 +26,16 @@ object Libs {
         const val MATERIAL = "com.google.android.material:material:1.2.1"
     }
 
-    object Dagger {
-        const val HILT_GRADLE_PLUGIN = "com.google.dagger:hilt-android-gradle-plugin:2.28-alpha"
-        const val HILT = "com.google.dagger:hilt-android:2.28-alpha"
-        const val HILT_COMPILER = "com.google.dagger:hilt-android-compiler:2.28-alpha"
+    object Hilt {
+        private const val VERSION = "2.28-alpha"
+        const val GRADLE_PLUGIN = "com.google.dagger:hilt-android-gradle-plugin:$VERSION"
+        const val CORE = "com.google.dagger:hilt-android:$VERSION"
+        const val COMPILER = "com.google.dagger:hilt-android-compiler:$VERSION"
 
         object Android {
-            const val VIEW_MODEL = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha01"
-            const val COMPILER = "androidx.hilt:hilt-compiler:1.0.0-alpha01"
+            private const val VERSION = "1.0.0-alpha01"
+            const val VIEW_MODEL = "androidx.hilt:hilt-lifecycle-viewmodel:$VERSION"
+            const val COMPILER = "androidx.hilt:hilt-compiler:$VERSION"
         }
     }
 

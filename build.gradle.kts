@@ -7,9 +7,9 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:${Versions.ANDROID_GRADLE}")
+        classpath(Libs.Android.GRADLE_PLUGIN)
         classpath(Libs.Android.Navigation.GRADLE_PLUGIN)
-        classpath(Libs.Dagger.HILT_GRADLE_PLUGIN)
+        classpath(Libs.Hilt.GRADLE_PLUGIN)
     }
 }
 

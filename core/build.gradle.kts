@@ -47,8 +47,8 @@ dependencies {
     implementation(Libs.OkHttp.LOGGING)
 
     // Dagger
-    implementation(Libs.Dagger.HILT)
-    kapt(Libs.Dagger.HILT_COMPILER)
+    implementation(Libs.Hilt.CORE)
+    kapt(Libs.Hilt.COMPILER)
 
     // Misc
     implementation(Libs.TIMBER)

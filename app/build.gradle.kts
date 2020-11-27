@@ -63,10 +63,10 @@ dependencies {
     implementation(Libs.Google.MATERIAL)
 
     // Injection
-    implementation(Libs.Dagger.HILT)
-    kapt(Libs.Dagger.HILT_COMPILER)
-    implementation(Libs.Dagger.Android.VIEW_MODEL)
-    kapt(Libs.Dagger.Android.COMPILER)
+    implementation(Libs.Hilt.CORE)
+    kapt(Libs.Hilt.COMPILER)
+    implementation(Libs.Hilt.Android.VIEW_MODEL)
+    kapt(Libs.Hilt.Android.COMPILER)
 
     // Network
     implementation(Libs.Apollo.RUNTIME)
