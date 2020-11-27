@@ -27,13 +27,14 @@ object Libs {
     }
 
     object Hilt {
-        private const val VERSION = "2.28-alpha"
+        private const val VERSION = "2.30.1-alpha"
         const val GRADLE_PLUGIN = "com.google.dagger:hilt-android-gradle-plugin:$VERSION"
         const val CORE = "com.google.dagger:hilt-android:$VERSION"
         const val COMPILER = "com.google.dagger:hilt-android-compiler:$VERSION"
+        const val TESTING = "com.google.dagger:hilt-android-testing:$VERSION"
 
         object Android {
-            private const val VERSION = "1.0.0-alpha01"
+            private const val VERSION = "1.0.0-alpha02"
             const val VIEW_MODEL = "androidx.hilt:hilt-lifecycle-viewmodel:$VERSION"
             const val COMPILER = "androidx.hilt:hilt-compiler:$VERSION"
         }

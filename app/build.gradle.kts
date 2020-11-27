@@ -1,8 +1,8 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("kapt")
     id("androidx.navigation.safeargs.kotlin")
-    id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
 }
 
@@ -43,7 +43,7 @@ kapt {
 }
 
 dependencies {
-    api(project(":core"))
+    implementation(project(":core"))
 
     // Kotlin
     implementation(kotlin("stdlib"))
@@ -83,6 +83,13 @@ dependencies {
 
     // Testing
     testImplementation(Libs.Testing.JUNIT)
+    testImplementation(Libs.Hilt.TESTING)
+    kaptTest(Libs.Hilt.COMPILER)
+
+    // Instrumentation Testing
     androidTestImplementation(Libs.Testing.Android.JUNIT)
     androidTestImplementation(Libs.Testing.Espresso.CORE)
+    androidTestImplementation(Libs.Hilt.TESTING)
+    androidTestImplementation(Libs.Hilt.TESTING)
+    kaptAndroidTest(Libs.Hilt.COMPILER)
 }
