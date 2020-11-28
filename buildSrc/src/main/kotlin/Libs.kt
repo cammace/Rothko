@@ -1,7 +1,8 @@
 object Libs {
 
     object Android {
-        const val GRADLE_PLUGIN = "com.android.tools.build:gradle:4.0.1"
+        // Note: If changing Gradle version here, also change inside `buildSrc/build.gradle.kts` file.
+        const val GRADLE_PLUGIN = "com.android.tools.build:gradle:4.2.0-alpha16"
         const val CORE_KTX = "androidx.core:core-ktx:1.3.2"
         const val APPCOMPAT = "androidx.appcompat:appcompat:1.2.0"
         const val FRAGMENT_KTX = "androidx.fragment:fragment-ktx:1.2.5"
@@ -29,7 +30,7 @@ object Libs {
     object Hilt {
         private const val VERSION = "2.30.1-alpha"
         const val GRADLE_PLUGIN = "com.google.dagger:hilt-android-gradle-plugin:$VERSION"
-        const val CORE = "com.google.dagger:hilt-android:$VERSION"
+        const val ANDROID = "com.google.dagger:hilt-android:$VERSION"
         const val COMPILER = "com.google.dagger:hilt-android-compiler:$VERSION"
         const val TESTING = "com.google.dagger:hilt-android-testing:$VERSION"
 

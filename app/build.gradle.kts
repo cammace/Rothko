@@ -40,6 +40,10 @@ android {
 
 kapt {
     correctErrorTypes = true
+    javacOptions {
+        // Increase the max count of errors from annotation processors.
+        option("-Xmaxerrs", 500)
+    }
 }
 
 dependencies {
@@ -63,7 +67,7 @@ dependencies {
     implementation(Libs.Google.MATERIAL)
 
     // Injection
-    implementation(Libs.Hilt.CORE)
+    implementation(Libs.Hilt.ANDROID)
     kapt(Libs.Hilt.COMPILER)
     implementation(Libs.Hilt.Android.VIEW_MODEL)
     kapt(Libs.Hilt.Android.COMPILER)

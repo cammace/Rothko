@@ -12,12 +12,12 @@ repositories {
 }
 
 dependencies {
-    implementation("com.android.tools.build:gradle-api:4.0.1")
-    implementation("com.diffplug.spotless:spotless-plugin-gradle:5.6.1")
+    implementation("com.android.tools.build:gradle-api:4.2.0-alpha16")
+    implementation("com.diffplug.spotless:spotless-plugin-gradle:5.8.2")
 }
 
 dependencies {
-    implementation("com.android.tools.build:gradle:4.0.1")
+    implementation("com.android.tools.build:gradle:4.2.0-alpha16")
 }
 
 gradlePlugin {
